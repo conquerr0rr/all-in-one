@@ -1,0 +1,33 @@
+.thumbnail img{
+	height:350px;
+	border-radius: 10px;
+	background-color: black; 
+	animation: ZOOOM2 0.5s ease-in-out;
+    /*transition:0.5s ease-in-out;*/
+
+}
+
+.thumbnail img:hover{
+	/*transform: scale(1.1);
+	transition:0.5s ease-out;*/
+	animation: ZOOOM ease 1s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes ZOOOM{
+0%{
+	transform: scale(1);
+}	
+100%{
+	transform: scale(1.1);
+}	
+}
+
+@keyframes ZOOOM2{
+0%{
+	transform: scale(1.1);
+}	
+100%{
+	transform: scale(1);
+}	
+}

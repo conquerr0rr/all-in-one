@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBAL CHANGES */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('../img/5253x2955\ Photography\ Ice\ cube.jpg');
+    background-size: cover;
+    /* height: 100%; */
+    /* backdrop-filter: blur(10px); */
+}
+
+/* BODY STARTS HERE */
+
+.head-box{
+    width: 30%;
+    /* background-color: blue; */
+    /* height: 100%; */
+    /* margin-left: 470px; */
+    margin: auto;
+    height: 300px;
+    margin-top: 150px;
+    border: 8px solid white;
+    color:white;
+    display: block;
+    backdrop-filter: blur(10px);
+}
+
+.head-box h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+ 
+}
+
+.head-box p{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* BODY ENDS HERE */

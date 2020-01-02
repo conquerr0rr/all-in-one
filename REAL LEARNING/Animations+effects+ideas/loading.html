@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample text</title>
+
+
+<style type="text/css">
+	.box{
+		height: 200px;
+		width: 200px;
+		/*background-color: red;*/
+		margin-left: 550px;
+		margin-top: 150px;
+	}
+
+	.leftside{
+		height: 199px;
+		width: 15px;
+		background-color: red;
+		animation: bot 1s linear infinite;
+		animation-delay: 0.3s;
+		border-radius: 100px;
+		
+	}
+
+	.rightside{
+		position: relative;
+		height: 200px;
+		margin-top: -199px;
+		width: 15px;
+		float: right;
+		background-color: blue;
+		animation: bot 1s linear infinite;
+		animation-delay: 0.8s;
+			border-radius: 100px;
+	}
+
+	.topside{
+		position: absolute;
+		height:15px;
+		width: 200px;
+		background-color: green;
+		margin-top: -200px;
+		animation: bot 1s linear infinite;
+		animation-delay: 0.6s;
+			border-radius: 100px;
+	}
+
+	.botside{
+		position: absolute;
+		height:15px;
+		width: 200px;
+		background-color: yellow;
+		animation: bot 1s linear infinite;
+			border-radius: 100px;
+	}
+
+
+
+	@keyframes bot{
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<div>
+<h1>
+a sample heading</h1>
+<div class="box">
+	<div class="leftside"></div>
+	<div class="topside"></div>
+	<div class="rightside"></div>
+	<div class="botside"></div>
+</div>
+</div>
+</body>
+</html>

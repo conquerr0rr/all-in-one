@@ -1,0 +1,19 @@
+.LULANIMATION{
+	animation: LUL 1s ease-in-out 1;  
+	/*this class is just for using the animation keyframes which i have created*/
+	z-index: 20;
+}
+
+@keyframes LUL{
+	from{
+		opacity: 0;
+		transform: translateY(200px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+JUST USE THE LULANIMATION CLASS IN WHICH U WANT THE ANIMTAION

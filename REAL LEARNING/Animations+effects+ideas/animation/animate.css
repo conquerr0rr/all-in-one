@@ -1,0 +1,57 @@
+.rectangle{
+    width:800px;
+    display: flex;
+}
+.p1{
+    height:100px;
+    width:10px;
+    background-color:red;
+    animation:BIGSMALL 1S ease-in-out infinite;
+}
+.p2{
+    height:100px;
+    width:10px;
+    background-color:green;
+    animation:BIGSMALL 1S ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+.p3{
+    height:100px;
+    width:10px;
+    background-color:blue;
+    animation:BIGSMALL 1S ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.p4{
+    height:100px;
+    width:10px;
+    background-color:violet;
+    animation:BIGSMALL 1S ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+.p5{
+    height:100px;
+    width:10px;
+    background-color:orange;
+    animation:BIGSMALL 1S ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+.p6{
+    height:100px;
+    width:10px;
+    background-color:green;
+    animation:BIGSMALL 1S ease-in-out 3;
+    animation-delay: 0.5s;
+}
+
+@keyframes BIGSMALL{
+    0%{
+        height:50px;
+    }
+    50%{
+        height:100px;
+    }
+    100%{
+        height: 50px;
+    }
+}

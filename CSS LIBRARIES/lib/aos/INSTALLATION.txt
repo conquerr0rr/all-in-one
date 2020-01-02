@@ -1,0 +1,6 @@
+<script>
+  AOS.init();
+</script>
+
+
+PUT THIS AFTER YOU LINK THE JS FILE

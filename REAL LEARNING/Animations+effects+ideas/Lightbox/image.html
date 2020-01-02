@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hello, world!</title>
+
+
+
+<style type="text/css">
+	/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  /*width: 25%;*/
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  height: 50px;
+  width:100px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+</style>
+
+  </head>
+  <body>
+    
+
+    <!-- <div class="row">
+    	<div class="col-lg-8 offset-lg-2">
+    		<img src="sad.jpg">
+    	</div>
+    </div>
+
+
+
+    <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><img src="sad.jpg"></a></li>
+    <li class="page-item"><a class="page-link" href="#"><img src="sad.jpg"></a></li>
+    <li class="page-item"><a class="page-link" href="#"><img src="sad.jpg"></a></li>
+    <li class="page-item"><a class="page-link" onclick="changeImage()" href="#"><img src="sad.jpg"></a></li>
+  </ul>
+</nav>
+ -->
+
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:40%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="sad.jpg" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="14170.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="18393.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="18391.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+	function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<script></script> tag is used for the linking b/w html and js file
+
+javascript is a case sensitive language
+
+IT CAN BE INCLUDED IN BOTH HEAD AND BODY
+
+4 ways for including files of js: -
+
+
+1)document.getElementById("demo").innerHTML = "js file name"
+
+3 ways to display data in js file
+
+1) window.alert()
+
+2) document.write()
+
+3)  innerHTML
+
+4) console.log()
+
+
+
+
+node -v
+
+node hehe.js
+
+cd desktop 
+
+cd node
+
+node apple$ hehe.js
+
+
+
+type script is the super set javascript
+
+node v10 understand typescript and javascript
+
+
+NODE-node.js is just a javascript runtime environment
+
+not a framework
+
+let and var both used to create a variable but let is faster than a variable
+
+let alt result
+
+DECLARTAION
+
+let for 10 version and var for 8 version
+
+type of function==   typeof()
+
+parenthesis are also callled params
+
+temporary value OR Variable
+
+
+bootstrapmade.com	
+
+
+for ideas and creativity for the website need of the person

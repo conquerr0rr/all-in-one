@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+
+	background:black;
+	/*background-color: #0d161f;*/
+}
+
+.hidebox{
+	overflow: hidden;
+}
+.FADER{
+	width:99%;
+	height:99vh;
+	transition: none;
+	/*border:2px solid white;*/
+	/*margin:100px auto;*/
+	animation: FADE 20s infinite ease-in-out; 
+}
+
+@keyframes FADE{
+	/*0 SECOND*/
+	0%{
+     background-image: url("img1.jpg");
+     transform:scale(1);
+     transition: ease-in;
+	}
+    /*4 SECOND*/
+	20%{
+	background-image: url("img2.jpg");	
+     transition: ease-out;
+     transform:scale(1.1);
+	}
+/*8 SECOND*/
+	40%{
+	background-image: url("img3.jpg");	
+	transform:scale(1);
+	transition: ease-in;
+	}
+/*12 SECOND*/
+	60%{
+	background-image: url("img4.jpg");	
+	transform:scale(1.1);
+	transition: ease-out;
+	}
+/*16 SECOND*/
+	80%{
+	background-image: url("img5.jpg");	
+	transform:scale(1);
+	transition: ease-out;
+	}
+/*20 SECOND*/
+	100%{
+	background-image: url("img6.jpg");	
+	transform:scale(1.1);
+	transition: ease-in;
+	}
+}

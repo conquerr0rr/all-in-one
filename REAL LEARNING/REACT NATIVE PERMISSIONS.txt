@@ -1,0 +1,108 @@
+/////////////1 VIBRATION PERMISSION//////////////////
+
+inside android manifest.xml paste this line
+
+<uses-permission android:name="android.permission.VIBRATE" />
+
+just below the internet file
+
+
+
+const DURATION= 100;
+const PATTERN=[1000,2000,1000,2000];
+
+//declare this in starting of page
+
+
+
+
+ onPress={() => {
+                        Vibration.vibrate(PATTERN)
+                        }}
+
+//this on the button you wish on press to be vibrated
+
+
+
+also import Vibration variable in react-native
+////////////////ENDING OF VIBRATION////////////
+
+/////////////////LOCATION PERMISSION//////////////
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+///this line in AndroidManifest.xml
+
+import { PermissionsAndroid, Alert } from 'react-native';
+
+///inside the import section
+
+
+
+export async function request_location_runtime_permission() {
+
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          'title': 'ReactNativeCode Location Permission',
+          'message': 'ReactNativeCode App needs access to your location '
+        }
+      )
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        Alert.alert("Location Permission Granted.");
+
+    }
+      else {
+        Alert.alert("Location Permission Not Granted");
+      }
+    } catch (err) {
+      console.warn(err)
+    }
+  }
+
+///////this line before the class component
+
+
+
+
+
+  async componentDidMount() {
+        await request_location_runtime_permission()
+      }
+
+
+      /////this line inside the default class app extends component
+
+
+
+
+      <View style={styles.container} >
+<Text>React Native Runtime Permission Request</Text>
+</View>
+
+
+///////this is for displaying the alert information
+
+
+
+
+
+ {
+        // flex: 1,
+    //   justifyContent: 'center',
+    //   margin: 20
+    alignSelf:'center',
+    zIndex:99
+    }
+
+
+
+    ///////////////////Just for fun
+
+
+
+
+///////////////LOCATION PERMISSION ENDS///////////
+
+
